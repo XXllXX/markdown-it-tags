@@ -1,0 +1,22 @@
+{
+  "name": "markdown-it-tags",
+  "version": "1.0.0",
+  "description": "markdown-it tags",
+  "main": "index.js",
+  "keywords": [
+    "markdown-it-plugin",
+    "markdown-it",
+    "markdown",
+    "tags"
+  ],
+  "homepage": "https://github.com/XXllXX/markdown-it-tags",
+  "repository": "https://github.com/XXllXX/markdown-it-tags",
+  "author": "xxllxx",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "markdown-it": "^8.4.2",
+    "uglify-js": "^3.5.13"
+  }
+}
