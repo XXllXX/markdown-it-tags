@@ -1,0 +1,9 @@
+{
+  "name": "markdown-it-tags",
+  "version": "1.0.1",
+  "homepage": "https://github.com/XXllXX/markdown-it-tags",
+  "description": "markdown-it tags",
+  "main": "dist/markdown-it-tags.min.js",
+  "license": "MIT",
+  "keywords": ["markdown-it-plugin", "markdown-it", "markdown", "tags"]
+}
