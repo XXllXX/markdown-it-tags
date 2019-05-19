@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>markdown-it-tags</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+      p {
+        font-size: 13px;
+      }
+      .note-tags {
+        color: rgba(44, 63, 81, 0.3);
+      }
+
+      .note-tags code {
+        color: rgba(44, 63, 81, 0.5);
+        background: rgba(102, 128, 153, 0.075);
+        border-radius: 0;
+        padding: 2px 5px;
+      }
+
+      .note-tags code:empty {
+        display: none;
+      }
+
+      .note-tags .notebook {
+        background: rgba(44, 63, 81, 0.3);
+        color: #fff;
+        margin-right: 6px;
+      }
+      .notebook::before {
+        content: '\f0ea';
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/markdown-it/dist/markdown-it.min.js"></script>
+    <script src="dist/markdown-it-tags.min.js"></script>
+    <script id="md" type="text/markdown"></script>
+    <script>
+      var md = window.markdownit()
+      md.use(window.markdownitTags)
+      var tempMd = '@(markdown)[markdown-it|plugin|tags]'
+      document.body.innerHTML = md.render(tempMd)
+    </script>
+  </body>
+</html>

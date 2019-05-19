@@ -1,10 +1,11 @@
 {
   "name": "markdown-it-tags",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "markdown-it tags",
   "main": "index.js",
   "scripts": {
-    "build": "browserify  ./ -s markdownitTags -t babelify -o dist/markdown-it-tags.min.js"
+    "build": "browserify  ./ -s markdownitTags -t babelify -o dist/markdown-it-tags.js",
+    "builds": "uglifyjs dist/markdown-it-tags.js -c -m -o dist/markdown-it-tags.min.js"
   },
   "keywords": [
     "markdown-it-plugin",
@@ -20,7 +21,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
-    "babelify": "^10.0.0",
+    "babelify": "^8.0.0",
     "browserify": "^16.2.3",
     "markdown-it": "^8.4.2",
     "uglify-js": "^3.5.13"
