@@ -1,5 +1,9 @@
 # markdown-it-tags
 
+## 在线例子
+
+[查看](https://xxllxx.github.io/markdown-it-tags/.)
+
 ## 安装
 
 ```bash
